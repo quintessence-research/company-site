@@ -1,6 +1,68 @@
+<script lang="ts" setup>
+
+useHead({
+    title: 'About Us - Quintessence Research',
+    meta: [
+        { name: 'description', content: 'Learn more about Quintessence Research, a research consultancy firm focused on the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.' },
+        { property: 'og:title', content: 'Quintessence Research - Applied Research Consultancy' },
+        { property: 'og:description', content: 'Learn more about Quintessence Research, an IT consultancy firm focused on the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://quintessenceresearch.com/about' },
+        { property: 'og:image', content: 'https://quintessenceresearch.com/logos/qr_icon.png' },
+        { property: 'og:locale', content: 'en_US' },
+        { property: 'og:site_name', content: 'Quintessence Research B.V.' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'About Us - Quintessence Research' },
+        { name: 'twitter:description', content: 'Learn more about Quintessence Research, an IT consultancy firm focused on the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.' },
+        { name: 'twitter:image', content: 'https://quintessenceresearch.com/logos/qr_icon.png' },
+    ],
+    link: [
+        { rel: 'canonical', href: 'https://quintessenceresearch.com/about' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.ico' }
+    ],
+    script: [
+        {
+            type: 'application/ld+json',
+            children: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "AboutPage",
+                "name": "About Us - Quintessence Research",
+                "url": "https://quintessenceresearch.com/about",
+                "description": "Learn more about Quintessence Research, a research consultancy firm focused on the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.",
+            }),
+        },
+    ],
+});
+
+
+useHead({
+    title: 'About Us - Quintessence Research',
+    meta: [
+        { name: 'description', content: 'Learn more about Quintessence Research, a research consultancy firm focused on the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.' },
+        { property: 'og:title', content: 'About Us - Quintessence Research' },
+        { property: 'og:description', content: 'Learn more about Quintessence Research, an IT consultancy firm focused on the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://quintessenceresearch.com/about' },
+        { property: 'og:image', content: 'https://quintessenceresearch.com/logos/qr_icon.png' },
+    ],
+    link: [{ rel: 'canonical', href: 'https://quintessenceresearch.com/about' }],
+    script: [
+        {
+            type: 'application/ld+json',
+            children: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "AboutPage",
+                "name": "About Us - Quintessence Research",
+                "url": "https://quintessenceresearch.com/about",
+                "description": "Learn more about Quintessence Research, a research consultancy firm focused on the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.",
+            }),
+        },
+    ],
+});
+
+</script>
 <template>
     <div class="flex flex-col bg-white">
-        <!-- <Header /> -->
         <main class="max-w-screen-lg mx-auto p-4">
             <div class="flex justify-center">
                 <div id="about" class="w-full overflow-hidden">
@@ -58,12 +120,5 @@
                 </div>
             </div>
         </main>
-        <!-- <Footer /> -->
     </div>
 </template>
-
-<script lang="ts" setup>
-
-</script>
-
-<style></style>

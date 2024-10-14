@@ -1,16 +1,3 @@
-<!-- <template>
-  <div class="flex flex-col min-h-screen">
-    <Header />
-    <NuxtPage />
-    <Footer />
-  </div>
-</template>
-
-<script lang="ts">
-import '~/assets/theme.css'
-
-</script> -->
-
 <template>
   <div class="flex flex-col min-h-screen">
     <Header ref="headerRef" />
@@ -23,7 +10,6 @@ import '~/assets/theme.css'
 </template>
 
 <script lang="ts" setup>
-import { ref, computed } from 'vue';
 import '~/assets/theme.css';
 
 const headerRef = ref(null);

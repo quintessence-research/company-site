@@ -1,19 +1,24 @@
 <script setup lang="ts">
-import { useHead } from '@unhead/vue'
-import { useToast } from 'primevue/usetoast'
-
-// Configure the page head
 useHead({
-    title: 'Quintessence Research - Research Consultancy',
+    title: 'Quintessence Research - Applied Research Consultancy',
     meta: [
         { name: 'description', content: 'Quintessence Research specializes in applied research for the Circular Economy, Digital Product Passport, Digital Identities, Digital Twins, and Data Sharing.' },
-        { property: 'og:title', content: 'Quintessence Research - Research Consultancy' },
+        { property: 'og:title', content: 'Quintessence Research - Applied Research Consultancy' },
         { property: 'og:description', content: 'Quintessence Research specializes in applied research for the Circular Economy, Digital Product Passport, Digital Identities, Digital Twins, and Data Sharing.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://quintessenceresearch.com/' },
         { property: 'og:image', content: 'https://quintessenceresearch.com/logos/qr_icon.png' },
+        { property: 'og:locale', content: 'en_US' },
+        { property: 'og:site_name', content: 'Quintessence Research B.V.' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Quintessence Research - Applied Research Consultancy' },
+        { name: 'twitter:description', content: 'Quintessence Research specializes in applied research for the Circular Economy, Digital Product Passport, Digital Identities, Digital Twins, and Data Sharing.' },
+        { name: 'twitter:image', content: 'https://quintessenceresearch.com/logos/qr_icon.png' },
     ],
-    link: [{ rel: 'canonical', href: 'https://quintessenceresearch.com/' }],
+    link: [
+        { rel: 'canonical', href: 'https://quintessenceresearch.com/' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.ico' }
+    ],
     script: [
         {
             type: 'application/ld+json',
@@ -32,30 +37,13 @@ useHead({
             }),
         },
     ],
-})
+});
 
-// Initialize toast for notifications
-const toast = useToast()
-
-// Function to show info toast
-const showInfo = () => {
-    console.log("Making a toast")
-    toast.add({
-        severity: 'info',
-        summary: 'Coming soon!',
-        detail: 'Parts of the website are still under construction. Check back soon.',
-        life: 3000
-    })
-}
 </script>
 
 <template>
     <div class="flex justify-center bg-surface-0">
         <main class="max-w-screen-xl mx-auto p-4">
-
-            <!-- PrimeVue Toast Component -->
-            <Toast />
-
             <div id="home" class="overflow-hidden">
                 <!-- Landing Section -->
                 <div class="grid grid-cols-1 md:grid-cols-2 bg-surface-section text-gray-800">
@@ -73,7 +61,7 @@ const showInfo = () => {
                             </p>
                             <NuxtLink to="/about">
                                 <Button label="About us"
-                                    class="bg-gray-200 text-black rounded px-4 py-2 text-xl border-none mt-5 font-normal hover:bg-red-600 hover:text-white transition-colors" />
+                                    class="bg-gray-200 text-black rounded px-4 py-2 text-xl border-none mt-5 font-normal hover:bg-[#a80000] hover:text-white transition-colors" />
                             </NuxtLink>
                         </section>
                     </div>
@@ -119,12 +107,6 @@ const showInfo = () => {
                                         thus providing greater autonomy in a connected world.
                                     </p>
                                 </div>
-                                <div class="w-auto lg:w-1/12 flex justify-end items-center p-2">
-                                    <Button rounded label="Info" severity="secondary"
-                                        class="text-xl hover:bg-gray-400 transition-colors" @click="showInfo">
-                                        &#x203A;
-                                    </Button>
-                                </div>
                             </div>
                         </div>
 
@@ -147,12 +129,6 @@ const showInfo = () => {
                                         supply
                                         chains.
                                     </p>
-                                </div>
-                                <div class="w-auto lg:w-1/12 flex justify-end items-center p-2">
-                                    <Button rounded label="Info" severity="secondary"
-                                        class="text-xl hover:bg-gray-400 transition-colors" @click="showInfo">
-                                        &#x203A;
-                                    </Button>
                                 </div>
                             </div>
                         </div>
@@ -177,12 +153,6 @@ const showInfo = () => {
                                         protection regulations.
                                     </p>
                                 </div>
-                                <div class="w-auto lg:w-1/12 flex justify-end items-center p-2">
-                                    <Button rounded label="Info" severity="secondary"
-                                        class="text-xl hover:bg-gray-400 transition-colors" @click="showInfo">
-                                        &#x203A;
-                                    </Button>
-                                </div>
                             </div>
                         </div>
 
@@ -206,12 +176,6 @@ const showInfo = () => {
                                         across various sectors.
                                     </p>
                                 </div>
-                                <div class="w-auto lg:w-1/12 flex justify-end items-center p-2">
-                                    <Button rounded label="Info" severity="secondary"
-                                        class="text-xl hover:bg-gray-400 transition-colors" @click="showInfo">
-                                        &#x203A;
-                                    </Button>
-                                </div>
                             </div>
                         </div>
 
@@ -234,12 +198,6 @@ const showInfo = () => {
                                         technical standards, secure transfers, legal interoperability, and common
                                         decentralized marketplaces for data providers to publish on.
                                     </p>
-                                </div>
-                                <div class="w-auto lg:w-1/12 flex justify-end items-center p-2">
-                                    <Button rounded label="Info" severity="secondary"
-                                        class="text-xl hover:bg-gray-400 transition-colors" @click="showInfo">
-                                        &#x203A;
-                                    </Button>
                                 </div>
                             </div>
                         </div>

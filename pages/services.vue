@@ -1,4 +1,43 @@
 <script lang="ts" setup>
+useHead({
+    title: 'Services - Quintessence Research',
+    meta: [
+        { name: 'description', content: 'Explore our applied research consultancy services in the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.' },
+        { property: 'og:title', content: 'Services - Quintessence Research' },
+        { property: 'og:description', content: 'Explore our applied research consultancy services in the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://quintessenceresearch.com/services' },
+        { property: 'og:image', content: 'https://quintessenceresearch.com/logos/qr_icon.png' },
+        { property: 'og:locale', content: 'en_US' },
+        { property: 'og:site_name', content: 'Quintessence Research B.V.' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Services - Quintessence Research' },
+        { name: 'twitter:description', content: 'Explore our applied research consultancy services in the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.' },
+        { name: 'twitter:image', content: 'https://quintessenceresearch.com/logos/qr_icon.png' },
+    ],
+    link: [
+        { rel: 'canonical', href: 'https://quintessenceresearch.com/services' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.ico' }
+    ],
+    script: [
+        {
+            type: 'application/ld+json',
+            children: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Applied Research Consultancy Services",
+                "url": "https://quintessenceresearch.com/services",
+                "serviceType": "Applied Research",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Quintessence Research",
+                    "url": "https://quintessenceresearch.com"
+                },
+                "description": "Explore our applied research consultancy services in the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.",
+            }),
+        },
+    ],
+});
 
 </script>
 <template>
@@ -113,7 +152,8 @@
 
                                 <!-- Panel for Introductory Consultations -->
                                 <Panel class="p-4">
-                                    <div class="text-2xl font-light text-gray-800 mb-3">Introductory Consultations</div>
+                                    <div class="text-2xl font-bold text-gray-800 mb-3">Introductory Consultations
+                                    </div>
                                     <p class="font-normal text-xl line-height-3 text-gray-800">
                                         Are you unsure about a particular technology or regulatory requirement? We offer
                                         introductory consultations to help you navigate the complexities of emerging
@@ -131,14 +171,14 @@
 
                                 <!-- Panel for Customized Technology Introduction Presentations -->
                                 <Panel class="p-4">
-                                    <div class="text-2xl font-light text-gray-800 mb-3">Customized Technology
+                                    <div class="text-2xl font-bold text-gray-800 mb-3">Customized Technology
                                         Introduction Presentations</div>
                                     <p class="font-normal text-xl line-height-3 text-gray-800">
                                         Our customized technology introduction presentations are designed to demystify
                                         new technologies and their relevance to your sector or organization. We provide
                                         a comprehensive overview, including:
                                     </p>
-                                    <ul class="ml-4 list-disc">
+                                    <ul class="ml-8 list-disc">
                                         <li>Legal considerations related to the technology.</li>
                                         <li>EU-level initiatives and standardization efforts.</li>
                                         <li>Industry trends and adoption rates.</li>
@@ -153,7 +193,7 @@
 
                                 <!-- Panel for Open Projects -->
                                 <Panel class="p-4">
-                                    <div class="text-2xl font-light text-gray-800 mb-3">Open Projects</div>
+                                    <div class="text-2xl font-bold text-gray-800 mb-3">Open Projects</div>
                                     <p class="font-normal text-xl line-height-3 text-gray-800">
                                         Do you have a project proposal that falls outside our core service tiers? Or are
                                         you looking for expertise to support an ongoing project? We are open to

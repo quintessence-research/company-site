@@ -1,9 +1,5 @@
 <script setup>
-import { useHead } from '@unhead/vue';
-import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { onMounted } from 'vue';
-
 useHead({
     title: 'Contact Us - Quintessence Research',
     meta: [
@@ -13,16 +9,27 @@ useHead({
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://quintessenceresearch.com/contact' },
         { property: 'og:image', content: 'https://quintessenceresearch.com/logos/qr_icon.png' },
+        { property: 'og:locale', content: 'en_US' },
+        { property: 'og:site_name', content: 'Quintessence Research B.V.' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Contact Us - Quintessence Research' },
+        { name: 'twitter:description', content: 'Contact Quintessence Research for inquiries on applied research consultancy services in the Circular Economy, Digital Product Passport, Digital Identities, Digital Twins, and Data Sharing.' },
+        { name: 'twitter:image', content: 'https://quintessenceresearch.com/logos/qr_icon.png' },
     ],
-    link: [{ rel: 'canonical', href: 'https://quintessenceresearch.com/contact' }],
+    link: [
+        { rel: 'canonical', href: 'https://quintessenceresearch.com/contact' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.ico' }
+    ],
     script: [
         {
             type: 'application/ld+json',
             children: JSON.stringify({
                 "@context": "https://schema.org",
-                "@type": "ContactPage",
+                "@type": "ContactPoint",
                 "name": "Contact Us - Quintessence Research",
                 "url": "https://quintessenceresearch.com/contact",
+                "logo": "https://quintessenceresearch.com/logos/qr_icon.png",
+                "description": "Contact Quintessence Research for inquiries on applied research consultancy services in the Circular Economy, Digital Product Passport, Digital Identities, Digital Twins, and Data Sharing.",
                 "contactPoint": {
                     "@type": "ContactPoint",
                     "email": "contact@quintessenceresearch.com",
@@ -33,7 +40,9 @@ useHead({
     ],
 });
 
-onMounted(() => {
+onMounted(async () => {
+    const L = await import('leaflet');
+
     const map = L.map('map').setView([51.4416, 5.4697], 13);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -103,7 +112,6 @@ onMounted(() => {
                                         </a>
                                     </p>
                                 </section>
-
                                 <div class="relative h-96 mt-8 md:mt-0">
                                     <div id="map" class="absolute inset-0 bg-gray-200"></div>
                                 </div>
