@@ -45,7 +45,7 @@ const formatDate = (date: Date) => {
 const currentDate = ref(formatDate(new Date()));
 
 // Computed logo URL
-const logoUrl = computed(() => 'logos/qr_logo.png');
+const logoUrl = './logos/qr_logo.png';
 </script>
 
 <style scoped>

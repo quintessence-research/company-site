@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ['@primevue/nuxt-module', '@nuxtjs/tailwindcss', // 'nuxt-primevue'
-  '@nuxt/content', '@nuxt/image', '@nuxtjs/seo', 'nuxt-security'],
+    '@nuxt/content', '@nuxt/image', '@nuxtjs/seo', 'nuxt-security'],
   content: {
     // Optional configurations
     // markdown: {
@@ -28,5 +28,12 @@ export default defineNuxtConfig({
     description: 'Applied Research Consultancy working on digital innovation and circular economy infrastructure',
   },
   compatibilityDate: '2024-04-03',
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  security: {
+    headers: {
+      contentSecurityPolicy: {
+        'img-src': ["'self'", 'data:', 'https://*.tile.openstreetmap.org'],
+      }
+    }
+  }
 })

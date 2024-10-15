@@ -31,7 +31,7 @@
 
 <script lang="ts" setup>
 const isMenuVisible = ref(false);
-const logoUrl = 'logos/qr_logo_white.png';
+const logoUrl = './logos/qr_logo_white.png';
 
 const links = [
     { to: '/about', text: 'About' },
