@@ -2,7 +2,7 @@
     <header class="bg-[#a80000] text-white p-6 relative z-50">
         <div class="flex justify-between items-center max-w-screen-xl mx-auto">
             <NuxtLink to="/">
-                <NuxtImg :src="logoUrl" alt="Logo" class="h-16 w-auto lg:h-20 mb-0" />
+                <NuxtImg format="webp" :src="logoUrl" alt="Logo" class="h-16 w-auto lg:h-20 mb-0" />
             </NuxtLink>
 
             <nav class="hidden lg:flex space-x-8 text-lg">

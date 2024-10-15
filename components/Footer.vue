@@ -4,7 +4,7 @@
             <div class="flex flex-col lg:flex-row justify-between items-center mb-8">
                 <!-- Logo -->
                 <NuxtLink to="/" class="mb-4 lg:mb-0">
-                    <NuxtImg :src="logoUrl" alt="company logo" class="h-16 lg:h-20" />
+                    <NuxtImg format="webp" :src="logoUrl" alt="company logo" class="h-16 lg:h-20" />
                 </NuxtLink>
 
                 <!-- Company Links -->

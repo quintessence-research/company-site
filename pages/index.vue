@@ -69,7 +69,7 @@ useHead({
                     <!-- Image Content -->
                     <div class="overflow-hidden">
                         <div class="relative h-full pt-[100%] overflow-hidden">
-                            <NuxtImg src="/hero/hero-world.jpg" alt="Hero Image"
+                            <NuxtImg format="webp" src="/hero/hero-world.jpg" alt="Hero Image"
                                 class="absolute top-0 left-0 w-full h-full object-cover" />
                             <div
                                 class="absolute top-0 left-0 w-full h-full bg-red-600 bg-opacity-20 pointer-events-none">
@@ -94,8 +94,8 @@ useHead({
                         <div class="p-4">
                             <div class="flex flex-col lg:flex-row items-center rounded-lg p-4 bg-gray-200">
                                 <div class="w-full lg:w-1/4 p-2 flex justify-center">
-                                    <NuxtImg src="/expertise/digital-identity.jpg" alt="Self-sovereign Identity"
-                                        class="w-full h-auto object-cover rounded-lg" />
+                                    <NuxtImg format="webp" src="/expertise/digital-identity.jpg"
+                                        alt="Self-sovereign Identity" class="w-full h-auto object-cover rounded-lg" />
                                 </div>
                                 <div class="w-full lg:w-2/3 flex flex-col justify-center p-2">
                                     <h2 class="mb-2 text-xl font-bold text-gray-900">Self-sovereign Identity</h2>
@@ -114,8 +114,8 @@ useHead({
                         <div class="p-4">
                             <div class="flex flex-col lg:flex-row items-center rounded-lg p-4 bg-gray-200">
                                 <div class="w-full lg:w-1/4 p-2 flex justify-center">
-                                    <NuxtImg src="/expertise/product-passport.jpg" alt="Digital Product Passports"
-                                        class="w-full h-auto object-cover rounded-lg" />
+                                    <NuxtImg format="webp" src="/expertise/product-passport.jpg"
+                                        alt="Digital Product Passports" class="w-full h-auto object-cover rounded-lg" />
                                 </div>
                                 <div class="w-full lg:w-2/3 flex flex-col justify-center p-2">
                                     <h2 class="mb-2 text-xl font-bold text-gray-900">Digital Product Passports</h2>
@@ -137,7 +137,7 @@ useHead({
                         <div class="p-4">
                             <div class="flex flex-col lg:flex-row items-center rounded-lg p-4 bg-gray-200">
                                 <div class="w-full lg:w-1/4 p-2 flex justify-center">
-                                    <NuxtImg src="/expertise/privacy-enhancing-technologies.jpg"
+                                    <NuxtImg format="webp" src="/expertise/privacy-enhancing-technologies.jpg"
                                         alt="Privacy Enhancing Technologies"
                                         class="w-full h-auto object-cover rounded-lg" />
                                 </div>
@@ -160,7 +160,7 @@ useHead({
                         <div class="p-4">
                             <div class="flex flex-col lg:flex-row items-center rounded-lg p-4 bg-gray-200">
                                 <div class="w-full lg:w-1/4 p-2 flex justify-center">
-                                    <NuxtImg src="/expertise/digital-twins.jpg" alt="Digital Twins"
+                                    <NuxtImg format="webp" src="/expertise/digital-twins.jpg" alt="Digital Twins"
                                         class="w-full h-auto object-cover rounded-lg" />
                                 </div>
                                 <div class="w-full lg:w-2/3 flex flex-col justify-center p-2">
@@ -183,7 +183,7 @@ useHead({
                         <div class="p-4">
                             <div class="flex flex-col lg:flex-row items-center rounded-lg p-4 bg-gray-200">
                                 <div class="w-full lg:w-1/4 p-2 flex justify-center">
-                                    <NuxtImg src="/expertise/data-sharing-technologies.jpg"
+                                    <NuxtImg format="webp" src="/expertise/data-sharing-technologies.jpg"
                                         alt="Data Sharing Technologies" class="w-full h-auto object-cover rounded-lg" />
                                 </div>
                                 <div class="w-full lg:w-2/3 flex flex-col justify-center p-2">
