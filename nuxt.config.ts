@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   security: {
     headers: {
       contentSecurityPolicy: {
-        'img-src': ["'self'", 'data:', 'https://*.tile.openstreetmap.org', 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/*/images/'],
+        'img-src': ["'self'", 'data:', 'https://*.tile.openstreetmap.org', 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/'],
       }
     }
   }

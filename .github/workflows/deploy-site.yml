@@ -11,16 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: corepack enable
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
+
+      - uses: pnpm/action-setup@v4
 
       # Set up Node.js with pnpm and enable caching
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "pnpm"
-          package-manager: "pnpm"
 
       # Pick your own package manager and build script
       - run: pnpm install
