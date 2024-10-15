@@ -4,7 +4,7 @@
             <div class="flex flex-col lg:flex-row justify-between items-center mb-8">
                 <!-- Logo -->
                 <NuxtLink to="/" class="mb-4 lg:mb-0">
-                    <img :src="logoUrl" alt="company logo" class="h-16 lg:h-20" />
+                    <NuxtImg :src="logoUrl" alt="company logo" class="h-16 lg:h-20" />
                 </NuxtLink>
 
                 <!-- Company Links -->
@@ -45,7 +45,7 @@ const formatDate = (date: Date) => {
 const currentDate = ref(formatDate(new Date()));
 
 // Computed logo URL
-const logoUrl = './logos/qr_logo.png';
+const logoUrl = '/logos/qr_logo.png';
 </script>
 
 <style scoped>

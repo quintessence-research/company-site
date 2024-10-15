@@ -2,7 +2,7 @@
     <header class="bg-[#a80000] text-white p-6 relative z-50">
         <div class="flex justify-between items-center max-w-screen-xl mx-auto">
             <NuxtLink to="/">
-                <img :src="logoUrl" alt="Logo" class="h-16 w-auto lg:h-20 mb-0" />
+                <NuxtImg :src="logoUrl" alt="Logo" class="h-16 w-auto lg:h-20 mb-0" />
             </NuxtLink>
 
             <nav class="hidden lg:flex space-x-8 text-lg">
@@ -31,7 +31,7 @@
 
 <script lang="ts" setup>
 const isMenuVisible = ref(false);
-const logoUrl = './logos/qr_logo_white.png';
+const logoUrl = '/logos/qr_logo_white.png';
 
 const links = [
     { to: '/about', text: 'About' },
