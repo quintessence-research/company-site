@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@primevue/nuxt-module', '@nuxtjs/tailwindcss', // 'nuxt-primevue'
-    '@nuxt/content', '@nuxt/image', '@nuxtjs/seo', 'nuxt-security'],
+  modules: ['@primevue/nuxt-module', // 'nuxt-primevue'
+    '@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/image', '@nuxtjs/seo', 'nuxt-security', '@nuxt/scripts'],
   content: {
     // Optional configurations
     // markdown: {
@@ -33,6 +33,14 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         'img-src': ["'self'", 'data:', 'https://*.tile.openstreetmap.org', 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/'],
+      }
+    }
+  },
+  scripts: {
+    globals: {
+      umamiAnalytics: {
+        src: 'https://umami.dev.qr-labs.com/script.js',
+        "data-website-id": 'e0fc1ed4-2c20-489e-a106-0c072a14a2f8'
       }
     }
   }
