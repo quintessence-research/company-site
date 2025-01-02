@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/suite/jws-2020/v1"
+    ],
+    "id": "did:web:quintessenceresearch.com",
+    "verificationMethod": [
+        {
+            "id": "did:web:quintessenceresearch.com#7DBciE0oAmw4Ru4JsKxkZy8fMGg4oOES9rpbsn9dE7I",
+            "type": "JsonWebKey2020",
+            "controller": "did:web:quintessenceresearch.com",
+            "publicKeyJwk": {
+                "crv": "Ed25519",
+                "x": "O8j3JOPYVCt7SThJyaBQHcNPSdF1pJObQfI6JNWo5UY",
+                "kty": "OKP",
+                "kid": "7DBciE0oAmw4Ru4JsKxkZy8fMGg4oOES9rpbsn9dE7I"
+            }
+        }
+    ],
+    "authentication": [
+        "did:web:quintessenceresearch.com#7DBciE0oAmw4Ru4JsKxkZy8fMGg4oOES9rpbsn9dE7I"
+    ],
+    "assertionMethod": [
+        "did:web:quintessenceresearch.com#7DBciE0oAmw4Ru4JsKxkZy8fMGg4oOES9rpbsn9dE7I"
+    ],
+    "capabilityDelegation": [
+        "did:web:quintessenceresearch.com#7DBciE0oAmw4Ru4JsKxkZy8fMGg4oOES9rpbsn9dE7I"
+    ],
+    "capabilityInvocation": [
+        "did:web:quintessenceresearch.com#7DBciE0oAmw4Ru4JsKxkZy8fMGg4oOES9rpbsn9dE7I"
+    ]
+}
