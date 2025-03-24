@@ -8,6 +8,10 @@
             <nav class="hidden lg:flex space-x-8 text-lg">
                 <NuxtLink v-for="link in links" :key="link.to" :to="link.to" class="hover:text-gray-300">
                     {{ link.text }}
+                    <span v-if="link.badge"
+                        class="ml-2 px-2 py-1 text-xs font-bold text-white bg-green-600 rounded-full">
+                        {{ link.badge }}
+                    </span>
                 </NuxtLink>
             </nav>
 
@@ -22,6 +26,10 @@
                     <NuxtLink v-for="link in links" :key="link.to" :to="link.to" class="hover:text-gray-300"
                         @click="closeMenu">
                         {{ link.text }}
+                        <span v-if="link.badge"
+                            class="ml-2 px-2 py-1 text-xs font-bold text-white bg-green-500 rounded-full">
+                            {{ link.badge }}
+                        </span>
                     </NuxtLink>
                 </nav>
             </div>
@@ -37,6 +45,7 @@ const links = [
     { to: '/about', text: 'About' },
     { to: '/services', text: 'Services' },
     { to: '/publications', text: 'Publications' },
+    { to: '/circular-data-suite', text: 'Circular Data Suite', badge: 'New' }, // Added badge
     { to: '/blog', text: 'Blog' },
     { to: '/contact', text: 'Contact' },
 ];
@@ -63,5 +72,26 @@ defineExpose({ isMenuVisible });
 .slide-fade-leave-to {
     transform: translateY(-20px);
     opacity: 0;
+}
+
+.badge {
+    background-color: #22c55e;
+    /* Green */
+    color: white;
+    font-size: 0.75rem;
+    /* text-xs */
+    font-weight: bold;
+    padding: 4px 8px;
+    /* Good internal margins */
+    border-radius: 9999px;
+    /* Fully rounded */
+    line-height: 1;
+    margin-left: 8px;
+    /* Space from text */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    min-height: 20px;
 }
 </style>

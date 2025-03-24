@@ -78,6 +78,25 @@ useHead({
                     </div>
                 </div>
 
+                <!-- Circular Data Suite info banner -->
+                <div
+                    class="mx-auto my-4 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-lg shadow-sm max-w-screen-lg">
+                    <div class="flex flex-col sm:flex-row items-center justify-between">
+                        <div class="flex items-center mb-2 sm:mb-0">
+                            <i class="pi pi-info-circle text-blue-600 mr-3 text-xl"></i>
+                            <span class="text-gray-800 text-lg">We're currently in-development to launch Circular Data
+                                Suite, a comprehensive DPP platform.</span>
+                        </div>
+                        <div>
+                            <NuxtLink to="/circular-data-suite"
+                                class="flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200 px-3 py-1 rounded hover:bg-blue-100">
+                                Read more!
+                                <i class="pi pi-arrow-right ml-2"></i>
+                            </NuxtLink>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Expertise Section -->
                 <div id="expertise" class="py-4 px-4 lg:px-8 mt-5 mx-auto max-w-7xl">
                     <div class="grid grid-cols-1 text-gray-800">

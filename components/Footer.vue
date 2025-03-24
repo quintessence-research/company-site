@@ -20,6 +20,13 @@
                         <NuxtLink to="/blog" class="block text-lg text-gray-700 hover:text-gray-500">Blog</NuxtLink>
                         <NuxtLink to="/contact" class="block text-lg text-gray-700 hover:text-gray-500">Contact
                         </NuxtLink>
+                        <NuxtLink to="/circular-data-suite" class="block text-lg text-gray-700 hover:text-gray-500">
+                            Circular Data Suite <span
+                                class="ml-2 px-2 py-1 text-xs font-bold text-white bg-green-500 rounded-full">
+                                New
+                            </span>
+                        </NuxtLink>
+
                         <NuxtLink to="/imprint" class="block text-lg text-gray-700 hover:text-gray-500">Imprint
                         </NuxtLink>
                     </div>

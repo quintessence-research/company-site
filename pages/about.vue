@@ -34,32 +34,6 @@ useHead({
     ],
 });
 
-
-useHead({
-    title: 'About Us - Quintessence Research',
-    meta: [
-        { name: 'description', content: 'Learn more about Quintessence Research, a research consultancy firm focused on the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.' },
-        { property: 'og:title', content: 'About Us - Quintessence Research' },
-        { property: 'og:description', content: 'Learn more about Quintessence Research, an IT consultancy firm focused on the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://quintessenceresearch.com/about' },
-        { property: 'og:image', content: 'https://quintessenceresearch.com/logos/qr_icon.png' },
-    ],
-    link: [{ rel: 'canonical', href: 'https://quintessenceresearch.com/about' }],
-    script: [
-        {
-            type: 'application/ld+json',
-            children: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "AboutPage",
-                "name": "About Us - Quintessence Research",
-                "url": "https://quintessenceresearch.com/about",
-                "description": "Learn more about Quintessence Research, a research consultancy firm focused on the Circular Economy, Digital Product Passports, Digital Identities, Digital Twins, and Data Sharing.",
-            }),
-        },
-    ],
-});
-
 </script>
 <template>
     <div class="flex flex-col bg-white">
