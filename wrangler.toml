@@ -1,3 +1,4 @@
 compatibility_date = "2025-03-23"
-name = "company-site"
+name = "company-website"
 build = "nuxt build --preset=cloudflare_pages"
+pages_build_output_dir = "dist"
