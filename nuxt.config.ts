@@ -36,12 +36,4 @@ export default defineNuxtConfig({
       }
     }
   },
-  scripts: {
-    globals: {
-      umamiAnalytics: {
-        src: 'https://umami.dev.qr-labs.com/script.js',
-        "data-website-id": 'e0fc1ed4-2c20-489e-a106-0c072a14a2f8'
-      }
-    }
-  }
 })
