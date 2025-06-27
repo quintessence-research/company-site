@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@primevue/nuxt-module', // 'nuxt-primevue'
-    '@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/image', '@nuxtjs/seo', 'nuxt-security', '@nuxt/scripts'],
+  modules: [// 'nuxt-primevue'
+    '@primevue/nuxt-module', '@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/image', '@nuxtjs/seo', 'nuxt-security', '@nuxt/scripts', '@kgierke/nuxt-matomo'],
   content: {
     // Optional configurations
     // markdown: {
@@ -18,6 +18,16 @@ export default defineNuxtConfig({
       unstyled: true,
       ripple: true
     }
+  },
+  matomo: {
+    host: "https://matomo.qr-labs.com",
+    siteId: 1,
+    // router: nuxtApp.$router,
+    enableLinkTracking: true,
+    // requireConsent: false,
+    // trackInitialView: true,
+    disableCookies: true,
+    // requireCookieConsent: false,
   },
   css: [
     'primeicons/primeicons.css',
