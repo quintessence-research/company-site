@@ -44,7 +44,7 @@ const publications = ref([
         title: "Position Paper on Trusted Digital Product Passports (tDPPs)",
         description: "This position paper outlines the strategic vision for Trusted Digital Product Passports (tDPPs) as tools to address sustainability challenges across complex supply chains. Built on open, decentralized architectures with digital identities at their core, tDPPs aim to balance transparency with data protection while establishing implementation horizons through 2030.",
         date: "December 2024",
-        url: "https://fides.community/blog/position-paper-on-trusted-digital-product-passports-tdpps"
+        url: "https://fides.community/trusted-digital-product-passports"
     }
 ]);
 
